@@ -1,0 +1,22 @@
+install - pip install simple-salesforce
+
+pip install requests
+
+
+#step 2
+
+# Salesforce login credentials
+username = "your_username"
+password = "your_password"
+security_token = "your_security_token"
+consumer_key = "your_consumer_key"
+consumer_secret = "your_consumer_secret"
+
+# Create a Salesforce connection
+sf = Salesforce(username=username, password=password, security_token=security_token,
+                consumer_key=consumer_key, consumer_secret=consumer_secret)
+
+# Example: Query and print Account names
+query_result = sf.query("SELECT Name FROM Account LIMIT 5")
+for record in query_result['records']:
+    print(record['Name'])

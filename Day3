@@ -1,0 +1,208 @@
+#condtional statements #logical operation #Code Blocks and scops
+#condition if/else
+# Syntax: if condition:
+#         do this
+#         if else:
+#         dothis
+# > . < . >= . <= . == . !=  
+
+# EXAMPLE
+
+# print("welcome to PCR")
+# name = input("please enter your name: ")
+# age = int(input("Please Enter your age: "))
+# if age >= 18:
+#     print(f"Gates are open please welcome to PCR {name}")
+# else:
+#     print(f"{name} childerns are not allowed")
+
+#--------------------------------------------------------------------------------------
+
+# Modulo operation:
+
+# number = int(input("plese enter your number: "))
+# if number % 2 == 0:
+#     print (f"your number {number} is even.")
+# else:
+#     print (f"your number {number} is odd")
+
+#nested if and elif
+# if condition:
+#     if another condition:
+#     else:
+# else:
+#------------------------------------------------
+
+
+# height = int(input("please enter your height in cm: "))
+
+# if height >= 120:
+#     age = int(input("please enter your age: "))
+#     if age >= 18:
+#         print("please pay $12")
+#     else:
+#         print("please pay $7")
+# else:
+#     print("your not eligble")
+
+#------------------------------------------------------------
+
+#if , elif , else syntax
+
+# if condition1:
+#     # code block 1
+
+# elif condition2:
+#     # code block 2
+
+# else: 
+#     # code block 3
+
+# name = input("Please enter your name: ")
+# age = int(input("Please enter your age: "))
+# if age >= 18:
+#     height = float(input("please enter your height: "))
+#     if height >= 150:
+#         print("Please got to left side")
+#     elif height < 150:
+#         print("please go to right side")
+# else:
+#     print("Your not eligible")
+
+#Example2(if , elif , else syntax)
+
+# weight = float(input("enter your weight: "))
+# height = float(input("enter your height: "))
+# bmi = round(weight/height ** 2)
+# if bmi <= 18.5:
+#     print(f" {bmi} is under weight")
+# elif bmi < 25:
+#     print(f"{bmi} normal weight")
+# elif bmi < 30:
+#     print(f"{bmi} is over weight")
+# elif bmi < 35:
+#     print(f"{bmi} is obese")
+# else:
+#    print(f"{bmi} is clenically obese")
+
+#example3
+# year = int(input("which year you want to check: "))
+
+# if year % 4 == 0:
+#     if year % 100 == 0:
+#         if year % 400 == 0:
+#             print(f"{year} is leaf year")
+#          else:
+#              print(f"{year} is not leap year")
+#     else:
+#         print(f"{year} is not leap year")
+# else:
+#  print(f"{year} is not leap year")
+
+
+#example 4
+# print("Welcome to PCR")
+# height = int(input("Pleas enter your height: "))
+# bill = 0
+
+# if height >= 120:
+#     print("You can enter in to PCR")
+#     age = int(input("please enter your age: "))
+#     if age < 12:
+#         bill = 5
+#         print("Your entry ticket is $5.")
+#     elif age <= 18:
+#         bill = 7
+#         print("your entry ticket $7. ")
+#     else:
+#         bill = 10
+#         print("your entry ticket is $10. ")
+#     Photo = input("want photo? Y on N ")
+#     if Photo == " Y ":
+#         bill += 3
+#     print(f"your bill is $ {bill} .")
+# else:
+#     Print("your not allow in to PCR")
+
+
+#example 5:
+
+# print("welcome to rannema tiffen center:")
+# dosa = input(" what kind dosa do you want ? S, M, or L : ")
+# add_egg = input("Do you want with egg? Y or N : ")
+# extra_egg = input("do you want extra egg ? Y or N : ")
+
+# bill = 0
+
+# if dosa == "S":
+#     bill += 15
+# elif dosa == "M":
+#     bill += 25
+# else:
+#     bill +=35
+
+# if add_egg == "Y":
+#     if dose == "S":
+#         bill +=5
+#     else:
+#         bill +=10
+
+# if extra_egg == "Y":
+#     bill += 10
+
+# print(f"your final bill is : ${bill}")
+
+
+#Logical operations :
+
+# AND = T + T = True , T + F =False
+# OR = T+T = True, T+F = True, F+F = False
+# not = is revesie true = false and false = true
+
+
+#example:
+
+# print ("welcome to love calculater:")
+# name1 = input("Enter name1: ")
+# name2 = input("enter name2: ")
+# combined_string = name1 + name2              #useing concatination
+# lower_case_string = combined_string.lower()  #conver in to lower case(lower())
+# t = lower_case_string.count("t")
+# r = lower_case_string.count("r")
+# u = lower_case_string.count("u")
+# e = lower_case_string.count("e")
+# true = t + r + u + e
+# l = lower_case_string.count("l")
+# o = lower_case_string.count("o")
+# v = lower_case_string.count("v")
+# e = lower_case_string.count("e")
+# love = l + o + v + e
+# love_score = int(str(true) + str(love))             # result value converting string to integer
+# if (love_score < 10) or (love_score >= 90):
+#     print(f"your score {love_score} like coke and mintos")
+# elif (love_score > 40) and (love_score <= 50 ):
+#     print(f"your score {love_score} your together")
+# else:
+#     print(f"your score{love_score} not together")
+
+
+# Example
+# print("weclome to tresure")
+# print("your mission is started:")
+# choice1 = input('you\'er enter your first move "right" or "left" .\n').lower()
+# if choice1 == "left":
+#     choice2 = input('you\'er enter into second stage. you want to "wait" or going to "swim".\n').lower()
+#     if choice2 == "wait":
+#         choice3 = input('your\'er enter in  level 3, choose "red" , "blue" , "yellow" .\n').lower()
+#         if choice3 == "red":
+#             print("yoyr enrer in to fire zone: game over..!")
+#         elif choice3 == "blue":
+#             print("yopur enter in to see zone... game over..!")
+#         elif choice3 == "yellow":
+#             print("you are find the tresure... game win..!")
+#         else:
+#             print("you chooesen door does't exist.. game over..!")
+#     else:
+#         print("you got attackked by trought.. game over..!")
+# else:
+#     print("you fell in to hole: Game over")
